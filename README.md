@@ -39,4 +39,21 @@ sudo pip install requests
 sudo crontab -e
 */1 * * * * sudo /home/user/script/send_to_domoticz.py
 `
-*http://fr.wikipedia.org/wiki/Crontab*# weatherstation
+*http://fr.wikipedia.org/wiki/Crontab*
+
+
+# automatisation de l'ouverture et de la fermeture de la porte 
+
+## installation de sunwait  
+### téléchargement 
+wget http://risacher.org/sunwait/sunwait-20041208.tar.gz
+
+### extraction et décompression
+tar -xzf sunwait-20041208.tar.gz
+
+### compilation
+cd sunwait-20041208
+make
+
+### ensuite pour le test : 
+./sunwait -p 43.729N 79.292W
