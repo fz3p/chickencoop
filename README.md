@@ -70,4 +70,8 @@ de fermeture la porte :
 `00 04 * * * sunwait sun up -0:20:00 47.218N -1.554W ; sudo python3 /home/pi/open_door.py`
 `00 15 * * * sunwait sun down 0:20:00 47.218N -1.554W ; sudo python3 /home/pi/close_door.py`
 
+# statut dans domoticz
+*modele /json.htm?type=command&param=udevice&idx=IDX&nvalue=0&svalue=TEXT
+https://www.domoticz.com/wiki/Domoticz_API/JSON_URL%27s#Text_sensor*
+crééer un device virtuel (dummies) de type texte
 
